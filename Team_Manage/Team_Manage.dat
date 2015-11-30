@@ -3,3 +3,39 @@
  * Author: rboudjeltia
  * Creation Date: 30 nov. 2015 at 10:19:17
  *********************************************/
+
+ 
+ NbFlight = 10; //number of flight
+ NbStew = 10;
+ NbHost = 10;
+ 
+ MemFlight = [4, 5, 5, 6, 7, 4, 5, 6, 6, 7]; //number of member by flight
+ MemHost = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of hostesses by flight
+ MemStew = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of Stewards by flight
+
+
+ //Team
+ Stewards  = {"Tom", "David", "Jeremy", "Ron", "Joe", "Bill", "Fred", "Bod", "Mario", "Ed"};
+ Hostesses = {"Carol", "Janet", "Tracy", "Marilyn" "Carolyn", "Cathy", "Inez", "Jean", "Heather", "Juliet"};
+ 
+ //check the order (key, data)
+Lang = #[
+	"Inez"   : "French",
+  	"Bill"   : "French",
+  	"Jean"   : "French",
+  	"Juliet" : "French",
+  	"Tom"    : "Spanish",
+  	"Jeremy" : "Spanish",
+  	"Mario"  : "Spanish",
+  	"Cathy"  : "Spanish",
+  	"Juliet" : "Spanish",
+	"Bill"   : "German",
+	"Fred"   : "German",
+	"Joe"    : "German",
+	"Mario"  : "German",
+	"Marilyn": "German",
+	"Inez"   : "German",
+	"Heather": "German"  
+ ]#;
+ 
+ 
