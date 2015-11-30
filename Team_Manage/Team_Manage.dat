@@ -18,7 +18,7 @@
  Stewards  = {"Tom", "David", "Jeremy", "Ron", "Joe", "Bill", "Fred", "Bod", "Mario", "Ed"};
  Hostesses = {"Carol", "Janet", "Tracy", "Marilyn" "Carolyn", "Cathy", "Inez", "Jean", "Heather", "Juliet"};
  
- //check the order (key, data)
+ //check the order (key, data)!!!
 Lang = #[
 	"Inez"   : "French",
   	"Bill"   : "French",
