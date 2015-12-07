@@ -19,7 +19,7 @@
  Hostesses = {"Carol", "Janet", "Tracy", "Marilyn" "Carolyn", "Cathy", "Inez", "Jean", "Heather", "Juliet"};
  
  //check the order (key, data)!!!
-Lang = #[
+/*Lang = #[
 	"Inez"   : "French",
   	"Bill"   : "French",
   	"Jean"   : "French",
@@ -36,6 +36,14 @@ Lang = #[
 	"Marilyn": "German",
 	"Inez"   : "German",
 	"Heather": "German"  
- ]#;
+ ]#;*/
  
- 
+ Lang1 = [
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1]];
+
+Lang2 = [
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+ 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1]];
