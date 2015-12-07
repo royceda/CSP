@@ -10,13 +10,15 @@
  NbHost = 10;
  
  MemFlight = [4, 5, 5, 6, 7, 4, 5, 6, 6, 7]; //number of member by flight
- MemHost = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of hostesses by flight
- MemStew = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of Stewards by flight
+ MemHost   = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of hostesses by flight
+ MemStew   = [1, 1, 1, 2, 3, 1, 1, 1, 2, 3]; //number of Stewards by flight
 
 
  //Team
- Stewards  = {"Tom", "David", "Jeremy", "Ron", "Joe", "Bill", "Fred", "Bod", "Mario", "Ed"};
+ Stewards  = {"Tom", "David", "Jeremy", "Ron", "Joe", "Bill", "Fred", "Bob", "Mario", "Ed"};
  Hostesses = {"Carol", "Janet", "Tracy", "Marilyn" "Carolyn", "Cathy", "Inez", "Jean", "Heather", "Juliet"};
+ 
+ Flight = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
  
  //check the order (key, data)!!!
 /*Lang = #[
@@ -39,11 +41,11 @@
  ]#;*/
  
  Lang1 = [
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1]];
+ 	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+ 	[1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+ 	[0, 0, 0, 0, 1, 1, 1, 0, 1, 0]]; // french, spanish, german
 
 Lang2 = [
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1],
- 	[1, 1, 0, 1, 0, 0, 0, 1, 0, 1]];
+ 	[0, 0, 0, 0, 0, 0, 1, 1, 0, 1],
+ 	[0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+ 	[0, 0, 0, 1, 0, 0, 1, 0, 1, 0]]; //french, spanish, german
