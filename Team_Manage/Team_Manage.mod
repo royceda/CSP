@@ -61,7 +61,7 @@ subject to{
   
   //constraint 1
   forall(j in 1..NbFlight){
-   limitct:  sum(i in Stewards)(S[i][j]) + sum(i in Hostesses)(H[i][j]) <=  MemFlight[j];
+   limitct:  sum(i in Stewards)(S[i][j]) + sum(i in Hostesses)(H[i][j]) ==  MemFlight[j];
    }  
   
   
