@@ -50,7 +50,7 @@ execute {
 /* Objective function */
 /**********************/
 
-//minimize the number of members used for all flight
+//maximize the number of members used for all flight
 maximize sum(j in 1..NbFlight)( sum(i in Hostesses)(H[i][j]) + sum(i in Stewards)(S[i][j])); 
 
 /***************/
