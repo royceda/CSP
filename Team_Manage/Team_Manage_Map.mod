@@ -27,8 +27,10 @@
  
  //string Lang[t in 1..16] = ...;
 
-int Lang1[1..3][Stewards] = ...;
-int Lang2[1..3][Hostesses] = ...;
+{string} Lang = ...;
+{string} LangS [t in Lang] = ...;
+{string} LangH [t in Lang] = ...;
+
 
 
 /**********************/
@@ -78,11 +80,32 @@ subject to{
   
   //constraint 4
   //language
-  forall(k in 1..3){
+  /*forall(k in 1..3){
     forall(j in 1..NbFlight)
        langct: sum(i in Stewards)(S[i][j]*Lang1[k][i]) + sum(i in Hostesses)(H[i][j] * Lang2[k][i]) >= 1;
     
-  } 
+  } */
+  
+  
+    forall(i in 1..NbFlight) {
+   	 		forall( l in Lang){	   	 	
+   	 			//sum(s in LangS[l])S[s][i] + sum(h in LangH[l])H[h][i] >= 1;
+   	 			sum(s in LangS[l])S[s][i]  >= 1; 			 			
+   	 			
+     	 }
+    }         	 			
+    			 			      			 
+     			 
+         
+     
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   //constraint 5

@@ -20,56 +20,47 @@
  
  Flight = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
  
+ Lang = {"French", "Spanish", "German"};
+ 
  //check the order (key, data)!!!
-LangMap1 = #[
-	"Inez"   : "French",
+
+/*Lang11 = #[	
   	"Bill"   : "French",
-  	"Jean"   : "French",
-  	"Juliet" : "French",
   	"Tom"    : "Spanish",
   	"Jeremy" : "Spanish",
-  	"Mario"  : "Spanish",
-  	"Cathy"  : "Spanish",
-  	"Juliet" : "Spanish",
+  	"Mario"  : "Spanish",	
 	"Bill"   : "German",
 	"Fred"   : "German",
 	"Joe"    : "German",
-	"Mario"  : "German",
-	"Marilyn": "German",
+	"Mario"  : "German"
+ ]#;
+ */
+ 
+ /*Lang12 = #[
+ 	"Inez"   : "French",
+   	"Jean"   : "French",
+  	"Juliet" : "French",
+  	"Cathy"  : "Spanish",
+  	"Juliet" : "Spanish",
+  	"Marilyn": "German",
 	"Inez"   : "German",
 	"Heather": "German"
-	
-	
-
+	]#;
+  	*/
+  	
+ 
+ LangS = #[
+ 	"French"  : {"Bill"} ,
+	"Spanish" : {"Tom", "Jeremy"},
+	"German"  : {"Bill", "Fred", "Joe", "Mario"}
  ]#;
  
- LangMap2 = #[	
- 	"French"  : "Inez",
-	"French"  : "Bil",
-	"French"  : "Jean",
-	"French"  : "Juliet",
-	"Spanish" : "Tom",
-	"Spanish" : "Jeremy",
-	"Spanish" : "Mario",
-	"Spanish" : "Cathy",
-	"Spanish" : "Juliet",
-	"German"  : "Bill",
-	"German"  : "Fred",
-	"German"  : "Joe",
-	"German"  : "Mario",
-	"German"  : "Marilyn",
-	"German"  : "Inez",
-	"German"  : "Heather"  
+ 
+ LangH = #[
+ 	"French"  : {"Bill", "Inez", "Jean", "Juliet"} ,
+	"Spanish" : {"Tom", "Jeremy", "Mario", "Cathy", "Juliet"},
+	"German"  : {"Bill", "Fred", "Joe", "Mario", "Marilyn", "Inez", "Heather"}
  ]#;
  
  
  
- Lang1 = [
- 	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
- 	[1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
- 	[0, 0, 0, 0, 1, 1, 1, 0, 1, 0]]; // french, spanish, german
-
-Lang2 = [
- 	[0, 0, 0, 0, 0, 0, 1, 1, 0, 1],
- 	[0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
- 	[0, 0, 0, 1, 0, 0, 1, 0, 1, 0]]; //french, spanish, german

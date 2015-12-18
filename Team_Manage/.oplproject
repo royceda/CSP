@@ -8,7 +8,9 @@
 			</ref>
 		</config>
 		<config category="opl" default="false" name="Configuration 2">
-			<ref name="Team_Manage.dat" type="data">
+			<ref name="Team_Manage_Map.dat" type="data">
+			</ref>
+			<ref name="Team_Manage_Map.mod" type="model">
 			</ref>
 		</config>
 	</configs>
