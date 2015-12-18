@@ -51,15 +51,15 @@
  
  LangS = #[
  	"French"  : {"Bill"} ,
-	"Spanish" : {"Tom", "Jeremy"},
+	"Spanish" : {"Tom", "Jeremy", "Mario"},
 	"German"  : {"Bill", "Fred", "Joe", "Mario"}
  ]#;
  
  
  LangH = #[
- 	"French"  : {"Bill", "Inez", "Jean", "Juliet"} ,
-	"Spanish" : {"Tom", "Jeremy", "Mario", "Cathy", "Juliet"},
-	"German"  : {"Bill", "Fred", "Joe", "Mario", "Marilyn", "Inez", "Heather"}
+ 	"French"  : {"Inez", "Jean", "Juliet"} ,
+	"Spanish" : {"Cathy", "Juliet"},
+	"German"  : {"Marilyn", "Inez", "Heather"}
  ]#;
  
  

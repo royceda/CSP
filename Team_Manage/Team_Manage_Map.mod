@@ -86,27 +86,12 @@ subject to{
     
   } */
   
-  
-    forall(i in 1..NbFlight) {
-   	 		forall( l in Lang){	   	 	
-   	 			//sum(s in LangS[l])S[s][i] + sum(h in LangH[l])H[h][i] >= 1;
-   	 			sum(s in LangS[l])S[s][i]  >= 1; 			 			
-   	 			
+  forall(i in 1..NbFlight) {
+    forall( l in Lang){	   	 	
+    	sum(s in LangS[l])S[s][i] + sum(h in LangH[l])H[h][i] >= 1; 			 			
      	 }
     }         	 			
-    			 			      			 
-     			 
-         
-     
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   //constraint 5
   forall(j in 1..NbFlight-2){
