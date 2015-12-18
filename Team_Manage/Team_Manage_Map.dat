@@ -20,6 +20,50 @@
  
  Flight = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
  
+ //check the order (key, data)!!!
+LangMap1 = #[
+	"Inez"   : "French",
+  	"Bill"   : "French",
+  	"Jean"   : "French",
+  	"Juliet" : "French",
+  	"Tom"    : "Spanish",
+  	"Jeremy" : "Spanish",
+  	"Mario"  : "Spanish",
+  	"Cathy"  : "Spanish",
+  	"Juliet" : "Spanish",
+	"Bill"   : "German",
+	"Fred"   : "German",
+	"Joe"    : "German",
+	"Mario"  : "German",
+	"Marilyn": "German",
+	"Inez"   : "German",
+	"Heather": "German"
+	
+	
+
+ ]#;
+ 
+ LangMap2 = #[	
+ 	"French"  : "Inez",
+	"French"  : "Bil",
+	"French"  : "Jean",
+	"French"  : "Juliet",
+	"Spanish" : "Tom",
+	"Spanish" : "Jeremy",
+	"Spanish" : "Mario",
+	"Spanish" : "Cathy",
+	"Spanish" : "Juliet",
+	"German"  : "Bill",
+	"German"  : "Fred",
+	"German"  : "Joe",
+	"German"  : "Mario",
+	"German"  : "Marilyn",
+	"German"  : "Inez",
+	"German"  : "Heather"  
+ ]#;
+ 
+ 
+ 
  Lang1 = [
  	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
  	[1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
