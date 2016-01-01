@@ -59,18 +59,21 @@ maximize sum(j in 1..NbFlight)( sum(i in Hostesses)(H[i][j]) + sum(i in Stewards
 subject to{
   
   //constraint 1
+  //Number of people required by flight
   forall(j in 1..NbFlight){
    limitct:  sum(i in Stewards)(S[i][j]) + sum(i in Hostesses)(H[i][j]) ==  MemFlight[j];
    }  
   
   
   //constraint 2
+  //Number of Stewards
   forall(j in 1..NbFlight){
    Stewardct: sum(i in  Stewards)S[i][j] >= MemStew[j]; 
    }     
   
    
   //constraint 3
+  //Number of Hostesses
   forall(j in 1..NbFlight){
    Hostct: sum(i in Hostesses)H[i][j] >= MemHost[j];
   } 
@@ -85,6 +88,7 @@ subject to{
   
   
   //constraint 5
+  //Day off
   forall(j in 1..NbFlight-2){
     forall(i in Stewards){
        Dispoct1: 
