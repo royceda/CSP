@@ -89,10 +89,77 @@ public class CSP {
 	
 	
 	
+	public static void binpacking(){
+		System.out.println("Bin packing");
+		int n = 5; //item
+		int m = 4; //bin
+		
+		int[] c = {10,15,12,11}; //capacities
+		int[] w = {5,8,1,6,4}; //sizes
+		
+		Model model = new Model("Bin packing");
+		
+		IntVar[][] x = model.intVarMatrix("x",n,m, 0, 1);
+		IntVar[][] xt = model.intVarMatrix("x",m,n, 0, 1); //transpose
+		IntVar[]   y = model.intVarArray("y", m, 0,1);
+		
+
+		// transpose: m x n cts
+		for(int i = 0; i<n; i++){
+			for(int j = 0; j<m; j++){
+				model.arithm(x[i][j], "=", xt[j][i]).post();			
+			}
+		}
+		
+		
+		//KP constraints: m cts
+		for(int j = 0; j<m; j++){
+			IntVar W = model.intScaleView(y[j], c[j]); 
+			model.scalar(xt[j], w, "<=", W).post();
+		}
+		
+		
+		//unique constrainst: n cts
+		for(int i = 0; i<n; i++){
+			model.sum(x[i], "=", 1).post();
+		}
+		
+		
+		IntVar   z  = model.intVar("z", 0, m);
+		model.sum(y, "=", z).post();
+		model.setObjective(Model.MINIMIZE, z);
+		
+		
+		
+		model.getSolver().showStatistics();
+		
+		
+		while(model.getSolver().solve()){	
+			System.out.println(z);
+			for(int j = 0; j<m; j++){
+				System.out.println(y[j]);
+				for(int i = 0; i<n; i++)
+					System.out.println(x[i][j]);			
+			}
+		}
+		
+		/*ParallelPortfolio portfolio = new ParallelPortfolio();
+		int nbModels = 1;
+		for(int s=0;s<nbModels;s++){
+			portfolio.addModel(model);
+		}
+		portfolio.solve();*/
+
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 		//prob1();
 		//knapsack();
 		Olympic();
+		binpacking();
 	}
 
 }
